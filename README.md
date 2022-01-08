@@ -1,6 +1,8 @@
 # Gerador de Tweets
 
-![Imagem do projeto](/twitter-project.png)
+<p align="center">
+  <img src="/twitter-project.png" />
+</p>
 
 Este projeto teve o intuito te criar uma interface usando Python e, principalmente, os módulos Tkinter e Tweepy para fornecer ao usuário um programa que gere um arquivo em excel com os dados do Twitter de acordo com os critérios inseridos.
 
