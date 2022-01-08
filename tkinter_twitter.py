@@ -90,7 +90,7 @@ def create():
     tweets = tw.Cursor(api.search, q=search_term, lang=langg, since=start_date).items(limit)
     tweets_info = [[tweet.created_at, tweet.text, tweet.user.screen_name, tweet.retweeted, tweet.favorite_count, tweet.in_reply_to_status_id, tweet.retweet_count, tweet.user.location] for tweet in tweets]
     
-    # creates de excel file
+    # creates the excel file
     df = pd.DataFrame(data=tweets_info, columns=col_names)
     df.to_excel('tweets.xlsx', index=False, encoding="utf-8")
     
